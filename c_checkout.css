@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1;
+    grid-template-areas: 
+        "aside main";
+    min-height: 100vh;
+}
+@media screen and (max-width: 1536px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "main";
+    }
+    aside{
+        visibility: hidden;
+    }
+}
+
+aside{
+    grid-area: aside;
+    background-color: #EAE3D9;
+    padding: 32px;
+}
+main{
+    grid-area: main;
+    padding-left: 48px;
+}

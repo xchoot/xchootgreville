@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>CHECKOUT | Greville Records</title>
+    
+    <link rel="stylesheet" href="c_reset.css">
+    <link rel="stylesheet" href="c_style.css">
+    <link rel="stylesheet" href="c_checkout.css">
+    <link rel="stylesheet" href="c_checkout_aside.css">
+    <link rel="stylesheet" href="c_checkout_main.css">
+
+    <script type="text/javascript" src="j_delivery.js"></script>
+</head>
+<body>
+    <aside class="receipt">
+        <div>
+            <h1>YOUR CART</h1>
+            <div class="item">
+                <div class="qty">
+                    <h4>1</h4>
+                    <div class="album">
+                        <img src="images/album_bts.jpg" width="75px">
+                        <div class="name">
+                            <h2>BTS</h2>
+                            <h3>Love Yourself: Answer</h3>
+                        </div>
+                    </div>
+                </div>
+                <h4>$49.90</h4>
+            </div>
+        </div>
+        <div>
+            <div class="costs">
+                <div class="text">
+                    <h5>Subtotal:</h5>
+                    <h5>Shipping Fee:</h5>
+                </div>
+                <div class="amount">
+                    <h5>49.90</h5>
+                    <h5>7.99</h5>
+                </div>
+            </div>
+            <div class="total">
+                <h6>TOTAL</h6>
+                <h6>$57.88</h6>
+            </div>
+            <a href="" class="back">&#60; Back</a>
+        </div>
+    </aside>
+    <main>
+        <div class="header">
+            <img src="images/logo.png" width="70px">
+            <h1>GREVILLE RECORDS CHECKOUT</h1>
+        </div>
+        <div class="contact">
+            <h2>Contact Details</h2>
+            <form>
+                <input type="text" name="contact" class="large" placeholder="Email or phone number">
+            </form>
+        </div>
+        <div class="delivery">
+            <h2>Delivery Method</h2>
+            <form>
+                <input type="radio" onclick="pickupCheck()" id="pickup" name="delivery" value="pickup">
+                <label for="pickup">Pick-up</label><br>
+                <input type="radio" onclick="shipCheck()" id="ship" name="delivery" value="ship" checked>
+                <label for="ship">Delivery</label>
+            </form>
+        </div>
+        <div class="details">
+            <div class="payment">
+                <h2>Payment Method</h2>
+                <form>
+                    <input type="radio" id="card" name="payment">
+                    <label for="card">Debit/Credit Card</label><br>
+                    <input type="text" name="cardNo" class="medium" placeholder="Card No."><br>
+                    <input type="text" name="cardName" class="medium" placeholder="Name (as seen on card)"><br>
+                    <input type="text" name="date" class="small" placeholder="Expiration Date (MM/YY)">
+                    <input type="text" name="security" class="small" placeholder="Security No."><br>
+                    <input type="radio" id="paypal" name="payment">
+                    <label for="paypal">PayPal</label>
+                </form>
+            </div>
+            <div class="shipping" id="shipping">
+                <h2>Shipping Address</h2>
+                <form>
+                    <input type="text" name="fName" class="small" placeholder="First Name">
+                    <input type="text" name="lName" class="small" placeholder="Last Name">
+                </form>
+                <select name="country" class="medium">
+                    <option value="select">Country</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <form><input type="text" name="addOne" class="medium" placeholder="Address Line #1"></form>
+                <form><input type="text" name="addTwo" class="medium" placeholder="Address Line #2"></form>
+                <form>
+                    <select name="state" class="small">
+                        <option value="select">State/Territory</option>
+                        <option value="vic">Victoria</option>
+                    </select>
+                    <input type="text" name="postcode" class="small" placeholder="Postcode">
+                </form>
+            </div>
+        </div>
+        <input type="submit" value="CONFIRM">
+    </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* highlighted section for recommendations */
+.container{
+    background-color: #106365;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+/* text colour is different for heading in the container */
+.heading{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1920px;
+    margin: auto;
+    padding-left: 1.5vw;
+    padding-top: 2.6vw;
+}
+.container .heading a{
+    text-decoration: none;
+    color: #EAE3D9;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: .4vw;
+}
+.heading a:hover{
+    text-decoration: underline;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1920px;
+    margin: auto;
+}
+.row .col-3{
+    padding: 1vw;
+}
+.row .col-3 img{
+    width: 100%;
+}

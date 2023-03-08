@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    height: 5vw;
+    align-items: center;
+    padding: 10px 40px 5px 15px;
+    background-color: #DE7C46;
+    grid-area: navbar;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 3.9vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 1.3vw;
+}
+a .logo{
+    width: 3.75vw;
+}
+a .cart{
+    width: 2.5vw;
+}
+.navbar a:hover{
+    color: #EAE3D9;
+}
+.search{
+    height: 3.2vw;
+    width: 26vw;
+    border: 1.5px solid #707070;
+    border-radius: 40px;
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-style: italic;
+    text-indent: 1.5vw;
+}

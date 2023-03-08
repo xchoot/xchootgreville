@@ -1,0 +1,96 @@
+/* text styling */
+aside h1{
+    color: #707070;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+aside h2{
+    color: black;
+    font-family: "American Typewriter", "Lucida Console", monospace;
+    size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+aside h3{
+    color: black;
+    font-family: "American Typewriter", "Lucida Console", monospace;
+    size: 14px;
+    line-height: 1.4;
+}
+aside h4{
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    size: 18px;
+    font-weight: bold;
+}
+aside h5{
+    color: black;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    size: 18px;
+    font-weight: light;
+    line-height: 1.2;
+    text-align: right;
+}
+aside h6{
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: right;
+    letter-spacing: 1px;
+    margin-left: 24px;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 48px auto 32px auto;
+}
+aside a:hover{
+    text-decoration: underline;
+}
+
+/* layout */
+.receipt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 128px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qty{
+    display: flex;
+    align-items: center;
+}
+.album{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6px;
+}
+.name{
+    margin-left: 6px;
+}
+.costs{
+    display: flex;
+    justify-content: flex-end;
+}
+.amount{
+    margin-left: 32px;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px auto;
+}

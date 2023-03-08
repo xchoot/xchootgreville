@@ -1,0 +1,160 @@
+body{
+    background-color: #EAE3D9;
+}
+section{
+    max-width: 1920px;
+    min-height: 980px;
+    margin: auto;
+    padding: auto 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .heading settings under style.css */
+.heading{
+    display: flex;
+    justify-content: space-around;
+    margin: 32px auto;
+}
+h1{
+    color: #DE7C46;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+h2{
+    color: black;
+    font-family: "American Typewriter", "Lucida Console", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+h3{
+    color: black;
+    font-family: "American Typewriter", "Lucida Console", monospace;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+}
+h4{
+    color: #DE7C46;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+h5{
+    color: #DE7C46;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-indent: 26px;
+}
+p{
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* table styling */
+table{
+    width: 90%;
+    margin: auto;
+}
+table, th, td{
+    border-collapse: collapse;
+    padding: 8px;
+}
+th{
+    vertical-align: bottom;
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid #707070;
+}
+.left{
+    text-align: left;
+    padding-left: 12px;
+}
+td{
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+    border: 0px;
+}
+.name{
+    margin-left: 12px;
+}
+td a{
+    color: #E4E4E4;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    margin-left: 12px;
+}
+.price{
+    color: #DE7C46;
+    font-weight: bold;
+}
+
+/* checkout labels and buttons */
+.receipt{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 56px;
+}
+.subtotal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+}
+.continue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.continue a{
+    color: #E4E4E4;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+    width: 420px;
+    border-radius: 10px;
+    margin: 12px 12px;
+}
+.shopping{
+    background-color: #106365;
+}
+.checkout{
+    background-color: #DE7C46;
+}
+section a:hover{
+    opacity: .8;
+}

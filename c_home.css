@@ -1,0 +1,28 @@
+/* text style settings */ 
+.heading a{
+    text-decoration: none;
+    color: #DE7C46;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: .4vw;
+    line-height: 1.6;
+}
+section{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #EAE3D9;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1920px;
+    margin: auto;
+}
+.row .col-3{
+    padding: 20px;
+}
+.row .col-3 img{
+    width: 100%;
+}

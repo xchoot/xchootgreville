@@ -1,0 +1,117 @@
+.header{
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+.header img{
+    width: 3.6vw;
+}
+
+/* text styling */
+main h1{
+    color: black;
+    font-family: "American Typewriter Condensed", "Lucida Console", monospace;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: .4vw;
+    text-indent: 24px;
+}
+main h2{
+    color: black;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+/* input fields styling */
+.small{
+    width: 22%;
+}
+.medium{
+    width: 44.5%;
+}
+.large{
+    width: 95%;
+}
+input[type=text] {
+    height: 50px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-indent: 16px;
+    margin-right: 3px;
+}
+input[type=radio] {
+    width: 18px;
+    height: 18px;
+    margin: 16px auto;
+}
+label {
+    color: black;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 12px;
+}
+select{
+    height: 50px;
+    border: 1px solid #707070;
+    margin-bottom: 8px;
+    color: #707070;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-indent: 8px;
+    margin-right: 8px;
+}
+input[type=submit] {
+    background-color: #707070;
+    color: white;
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    height: 65px;
+    width: 40%;
+    border-radius: 10px;
+    border: 0px;
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* layout */
+.details{
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5vw;    
+}
+.details .small{
+    width: 17.25vw;
+}
+.details .medium{
+    width: 35vw;
+}
+.shipping{
+    margin-left: 5vw;
+}
+@media screen and (max-width: 1280px) {
+    .details{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .details .small{
+        width: 95%;
+    }
+    .details .medium{
+        width: 95%;
+    }
+    .shipping{
+        margin-left: 0px;
+    }
+}    
